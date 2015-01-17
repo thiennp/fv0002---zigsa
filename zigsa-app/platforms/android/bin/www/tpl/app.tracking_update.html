@@ -1,0 +1,92 @@
+<form class="bs-example form-horizontal form-validation" ng-submit="update()">
+	<div class="panel-body">
+		<div class="form-group m-b-xs">
+			<div class="input-group col-xs-12">
+				<input type="number" class="form-control input-lg" ng-model="item.tracking_update.tracking_number" placeholder="Tracking No.">
+				<span class="input-group-btn" ng-show="!item.tracking_update.tracking_number && !numberUpdated">
+				<button class="btn btn-lg btn-info" type="button">Scan</button>
+				</span>
+			</div>
+		</div>
+		<div ng-show="numberUpdated">
+			<div class="form-group m-b-xs">
+				<textarea type="text" class="form-control input-lg" ng-model="item.tracking_update.comment" placeholder="Comment"></textarea>
+			</div>
+			<div class="alert alert-info form-group m-b-xs" ng-show="setting.predefined_text">
+				<select ng-change="updateComment()" ng-model="comment_predefined_text" class="form-control input-lg btn-primary">
+					<option value="">Predefined text</option>
+					<option
+						ng-repeat="text in predefineText"
+						ng-value="text.pre_define_text">
+						{{ text.pre_define_text }}
+					</option>
+				</select>
+			</div>
+			<div class="form-group m-b-xs">
+				<div class="input-group col-xs-12">
+					<input type="text" class="form-control input-lg" ng-model="item.tracking_update.address" placeholder="Address">
+					<span class="input-group-btn" ng-show="setting.locate_me">
+					<button class="btn btn-lg btn-info col-xs-12" type="button">Locate Me</button>
+					</span>
+				</div>
+			</div>
+			<div class="alert alert-info form-group m-b-xs" ng-show="setting.predefined_text || setting.locate_me">
+				<div class="row">
+					<div class="col-xs-12" ng-show="setting.predefined_text">
+						<select ng-change="updateAddress()" ng-model="address_location" class="form-control input-lg btn-primary">
+							<option value="">Predefined Address</option>
+							<option
+								ng-repeat="address in addresses"
+								ng-value="address.name">
+								{{ address.name }}
+							</option>
+						</select>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="form-group m-b-xs" ng-show="setting.package_dimensions">
+				<button class="btn btn-info btn-block btn-lg" type="button" ng-click="packageDetail()">Add Package Dimensions</button>
+			</div>
+			<div class="form-group m-b-xs" ng-show="setting.location">
+				<div class="input-group col-xs-12">
+					<select ng-model="item.tracking_update.location" class="form-control input-lg">
+						<option value="">Location</option>
+						<option
+							ng-selected="item.tracking_update.location == location.name"
+							ng-repeat="location in locations"
+							ng-value="location.name">
+							{{ location.name }}
+						</option>
+					</select>
+					<span class="input-group-btn" ng-show="!item.tracking_update.location">
+					<button class="btn btn-lg btn-info" type="button">Scan</button>
+					</span>
+				</div>
+			</div>
+			<div class="form-group m-b-xs">
+				<div style="display: inline-block">
+					<button class="btn btn-lg btn-icon btn-info pull-left">
+					<i class="fa fa-camera"></i>
+					</button>
+				</div>
+				<div style="display: inline-block">
+					<button class="btn btn-lg btn-icon btn-info pull-left">
+					<i class="fa fa-folder"></i>
+					</button>
+				</div>
+				<div style="display: inline-block" ng-show="setting.signature" class="pull-right">
+					<button class="btn btn-info col-xs-12 btn-lg" type="button" ng-hide="item.tracking_update.signature" ng-click="signatureDetail()">
+						Add Signature
+					</button>
+					<button class="btn btn-danger col-xs-12 btn-lg" type="button" ng-show="item.tracking_update.signature" ng-click="removeSignature()">
+						Remove Signature
+					</button>
+				</div>
+			</div>
+			<div class="form-group m-b-xs pull-right" ng-show="item.tracking_update.signature">
+				<img ng-src="{{ item.tracking_update.signature }}" class="form-signature" />
+			</div>
+		</div>
+	</div>
+</form>

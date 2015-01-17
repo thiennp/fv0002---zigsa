@@ -1,0 +1,21 @@
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes.dex : \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\com\phonegap\plugins\barcodescanner\BarcodeScanner.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\com\thiennp\zigsa\BuildConfig.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\com\thiennp\zigsa\R$array.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\com\thiennp\zigsa\R$attr.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\com\thiennp\zigsa\R$color.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\com\thiennp\zigsa\R$dimen.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\com\thiennp\zigsa\R$drawable.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\com\thiennp\zigsa\R$id.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\com\thiennp\zigsa\R$layout.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\com\thiennp\zigsa\R$menu.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\com\thiennp\zigsa\R$raw.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\com\thiennp\zigsa\R$string.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\com\thiennp\zigsa\R$xml.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\com\thiennp\zigsa\R.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\com\thiennp\zigsa\Zigsa.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\org\apache\cordova\camera\CameraLauncher.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\org\apache\cordova\camera\ExifHelper.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\classes\org\apache\cordova\camera\FileHelper.class \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\dexedLibs\classes-52a34b719df2b298fa8dbd974635d20f.jar \
+d:\Xampp\htdocs\zigsa-app\platforms\android\ant-build\dexedLibs\com.google.zxing.client.android.captureactivity-70749a9921e05d1c33500330c1aa5d59.jar \

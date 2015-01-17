@@ -1,0 +1,24 @@
+<div id="auth" class="ng-scope ng-isolate-scope">
+	<div class="app-name" style="position: fixed;
+		top: 20%; line-height: 40px; text-shadow: 0 0 5px #000; width: 100%; font-size: 40px; color: #fff; font-weight: bold; text-align: center">
+		<span style="font-size: 20px">
+		The
+		</span><br>
+		ZIGSA TRACKING
+	</div>
+	<img id="bigbackground" src="img/splash.jpg">
+	<div class="footer fadeIn animated">
+		<button type="submit" class="btn btn-lg btn-info btn-block" ui-sref="access.account" ng-show="!hasAccount && !checking">
+		<i class="fa fa-gears pull-left"></i>
+		Setup Account
+		</button>
+		<button type="submit" class="btn btn-lg btn-info btn-block" ui-sref="access.account" ng-show="hasAccount && !checking">
+		<i class="fa fa-gears pull-left"></i>
+		Change Account
+		</button>
+		<button type="submit" class="btn btn-lg btn-success btn-block" ui-sref="app.home" ng-show="hasAccount && !checking">
+		<i class="fa fa-sign-in pull-left"></i>
+		Login
+		</button>
+	</div>
+</div>

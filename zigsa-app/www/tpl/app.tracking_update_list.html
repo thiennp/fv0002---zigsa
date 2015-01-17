@@ -1,0 +1,26 @@
+<div class="row no-gutter" ng-hide="onEdit">
+	<div class="col-xs-6">
+		<div class="m-r-xxs">
+			<button
+				class="btn m-b-xs btn-lg btn-danger btn-block relative"
+				ng-click="uploadTrackingUpdateList(item.tracking_update_list)">
+				<i class="fa fa-upload pull-left"></i>
+				Upload
+			</button>
+		</div>
+	</div>
+	<div class="col-xs-6">
+		<div class="m-l-xxs">
+			<button
+				class="btn m-b-xs btn-lg btn-primary btn-block relative"
+				ng-click="emailTrackingUpdateList(item.tracking_update_list)">
+				<i class="fa fa-envelope pull-right"></i>
+				Email
+			</button>
+		</div>
+	</div>
+</div>
+<button class="btn m-b-xs btn-lg btn-info btn-block" ng-class="{'btn-danger': onEdit}" ng-repeat="tracking in item.tracking_update_list" ng-click="action(tracking.tracking_number)">
+	<i class="fa pull-right" ng-class="{'fa-pencil': !onEdit, 'fa-times': onEdit}"></i>
+	{{tracking.tracking_number}}
+</button>

@@ -1,0 +1,38 @@
+<form class="bs-example" ng-submit="update()">
+	<div class="form-group m-b-xs">
+		<label>Package Width</label>
+		<div class="input-group col-xs-12">
+			<input type="number" class="form-control input-lg" ng-model="package_dimentions.width" placeholder="">
+			<span class="input-group-btn" ng-show="!package_dimentions.width">
+			<button class="btn btn-info btn-lg" type="button" ng-click="scanWidth()">Scan</button>
+			</span>
+		</div>
+	</div>
+	<div class="form-group m-b-xs">
+		<label>Package Height</label>
+		<div class="input-group col-xs-12">
+			<input type="number" class="form-control input-lg" ng-model="package_dimentions.height" placeholder="">
+			<span class="input-group-btn" ng-show="!package_dimentions.height">
+			<button class="btn btn-info btn-lg" type="button" ng-click="scanHeight()">Scan</button>
+			</span>
+		</div>
+	</div>
+	<div class="form-group m-b-xs">
+		<label>Package Length</label>
+		<div class="input-group col-xs-12">
+			<input type="number" class="form-control input-lg" ng-model="package_dimentions.length" placeholder="">
+			<span class="input-group-btn" ng-show="!package_dimentions.length">
+			<button class="btn btn-info btn-lg" type="button" ng-click="scanLength()">Scan</button>
+			</span>
+		</div>
+	</div>
+	<div class="form-group m-b-xs">
+		<label>Package Weight</label>
+		<div class="input-group col-xs-12">
+			<input type="number" class="form-control input-lg" ng-model="package_dimentions.weight" placeholder="">
+			<span class="input-group-btn" ng-show="!package_dimentions.weight">
+			<button class="btn btn-info btn-lg" type="button" ng-click="scanWeight()">Scan</button>
+			</span>
+		</div>
+	</div>
+</form>

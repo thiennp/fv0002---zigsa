@@ -1,0 +1,17 @@
+<div id="auth" class="ng-scope ng-isolate-scope">
+	<img id="bigbackground" src="img/splash.jpg" width="100%">
+	<div class="footer fadeIn animated">
+		<button type="submit" class="btn btn-lg btn-info btn-block" ui-sref="access.account" ng-show="!hasAccount && !checking">
+		<i class="fa fa-gears pull-left"></i>
+		Setup Account
+		</button>
+		<button type="submit" class="btn btn-lg btn-info btn-block" ui-sref="access.account" ng-show="hasAccount && !checking">
+		<i class="fa fa-gears pull-left"></i>
+		Change Account
+		</button>
+		<button type="submit" class="btn btn-lg btn-success btn-block" ui-sref="app.home" ng-show="hasAccount && !checking">
+		<i class="fa fa-sign-in pull-left"></i>
+		Login
+		</button>
+	</div>
+</div>

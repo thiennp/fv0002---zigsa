@@ -1,0 +1,20 @@
+<div class="row">
+	<div class="col-xs-6">
+		<button
+		class="btn m-b-xs btn-lg btn-info btn-block"
+		ng-disabled="!item.new_tracking.receipt"
+		ng-click="save()">
+		<i class="fa fa-check pull-left"></i>
+		Save
+		</button>
+	</div>
+	<div class="col-xs-6">
+		<button
+		class="btn m-b-xs btn-lg btn-success btn-block"
+		ng-disabled="!item.new_tracking.receipt"
+		ng-click="addmore()">
+		<i class="fa fa-plus pull-right"></i>
+		Add More
+		</button>
+	</div>
+</div>

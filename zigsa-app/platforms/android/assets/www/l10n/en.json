@@ -1,0 +1,41 @@
+{
+
+  "header" : {
+    "navbar" : {
+      "UPLOAD" : "Upload",
+      "new" : {
+        "NEW" : "New",
+        "PROJECT" : "Projects",
+        "TASK" : "Task",
+        "USER" : "User",
+        "EMAIL" : "Email"
+      },
+      "NOTIFICATIONS" : "Notifications"
+    }
+  },
+  "aside" : {
+    "nav" : {
+      "MONITORING" : "Monitoring",
+      "STREAMS" : "Streams",
+      "PUBLISHER" : "Publisher",
+      "CONTACT" : "Contact",
+      "ASSIGNMENTS" : "Assignments",
+      "REPORTING" : "Reporting",
+      "REPORTS" : "Reports",
+      "REPORT_BUILDER" : "Report Builder",
+      "SETUP" : "Setup",
+      "PROJECTS" : "Projects",
+      "TOPIC_SETUP" : "Topic Setup",
+      "PROFILE" : "Profile",
+      "USERS" : "Users",
+      "ROLE" : "Role",
+      "CATEGORY_TAG" : "Category Tag",
+      "BILLING" : "Billing",
+      "RULE_MANAGEMENT" : "Rule Management",
+      "HISTORY" : "History",
+      "HELP" : "Help"
+    },
+    "MILESTONE" : "Milestone",
+    "RELEASE" : "Release"
+  }
+}

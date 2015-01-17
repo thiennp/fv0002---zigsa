@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+	<head>
+		<meta charset="utf-8" />
+		<title>Zigsa</title>
+		<meta name="description" content="app, web app, responsive, responsive layout, admin, admin panel, admin dashboard, flat, flat ui, ui kit, AngularJS, ui route, charts, widgets, components" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="bower_components/open-sans-fontface/open-sans.css" />
+		<!-- build:css({.tmp,app}) css/main.css -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"  />
+		<link rel="stylesheet" type="text/css" href="css/animate.css"  />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.signaturepad.css">
+		<link rel="stylesheet" type="text/css" href="css/app.css"  />
+		<link rel="stylesheet" type="text/css" href="css/custom.css"  />
+		<!-- endbuild -->
+	</head>
+	<body ng-controller="AppCtrl">
+		<div class="app fade-in-right-big smooth" id="app" ui-view style="width: 100%; height: 100%;"></div>
+		<!-- build:js({.tmp,app}) js/vendors.js -->
+		<script src="cordova.js"></script>
+		<script src="js/jquery/jquery.min.js"></script>
+		<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+		<script src="js/components/jquery.form.js"></script>
+		<script src="js/components/jquery.signaturepad.js"></script>
+		<script src="js/angular/angular.min.js"></script>
+		<script src="js/angular/angular-cookies.min.js"></script>
+		<script src="js/angular/angular-animate.min.js"></script>
+		<script src="js/angular/angular-ui-router.min.js"></script>
+		<script src="js/angular/angular-translate.js"></script>
+		<script src="js/angular/ngStorage.min.js"></script>
+		<script src="js/angular/ui-load.js"></script>
+		<script src="js/angular/ui-jq.js"></script>
+		<script src="js/angular/ui-validate.js"></script>
+		<script src="js/angular/ui-bootstrap-tpls.min.js"></script>
+		<script src="js/components/scrollbar.js"></script>
+		<script src="js/components/bigBackground.js"></script>
+		<script src="js/components/mainloading.js"></script>
+		<!-- endbuild -->
+		<!-- build:js({.tmp,app}) js/app.js -->
+		<script src="js/app.js"></script>
+		<script src="js/services.js"></script>
+		<script src="js/controllers.js"></script>
+		<script src="js/filters.js"></script>
+		<script src="js/directives.js"></script>
+		<script src="js/services/auth.js"></script>
+		<script src="js/services/mock.js"></script>
+		<script src="js/services/access.js"></script>
+		<script src="js/services/app.js"></script>
+		<script src="js/controllers/access.signin.js"></script>
+		<script src="js/controllers/access.splash.js"></script>
+		<script src="js/controllers/access.account.js"></script>
+		<script src="js/controllers/access.config.js"></script>
+		<script src="js/controllers/access.language.js"></script>
+		<script src="js/controllers/access.new_tracking.js"></script>
+		<script src="js/controllers/access.tracking_update.js"></script>
+		<script src="js/controllers/access.about.js"></script>
+		<script src="js/controllers/app.home.js"></script>
+		<script src="js/controllers/app.tracking_list.js"></script>
+		<script src="js/controllers/app.new_tracking.js"></script>
+		<script src="js/controllers/app.over_write_defaults.js"></script>
+		<script src="js/controllers/app.tracking_update.js"></script>
+		<script src="js/controllers/app.tracking_update_list.js"></script>
+		<script src="js/controllers/app.package_info.js"></script>
+		<script src="js/controllers/app.signature.js"></script>
+		<script src="js/controllers/app.search_user.js"></script>
+		<script src="js/controllers/app.user_list.js"></script>
+		<script src="js/controllers/footer/app.tracking_list.js"></script>
+		<script src="js/controllers/footer/app.new_tracking.js"></script>
+		<script src="js/controllers/footer/app.over_write_defaults.js"></script>
+		<script src="js/controllers/footer/app.tracking_update.js"></script>
+		<script src="js/controllers/footer/app.tracking_update_list.js"></script>
+		<script src="js/controllers/footer/app.package_info.js"></script>
+		<script src="js/controllers/footer/app.signature.js"></script>
+		<script src="js/controllers/footer/app.search_user.js"></script>
+		<!-- endbuild -->
+	</body>
+</html>

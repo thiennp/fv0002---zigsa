@@ -1,0 +1,44 @@
+<div class="row no-gutter" ng-hide="onEdit">
+	<div class="col-xs-6">
+		<div class="m-r-xxs">
+			<button
+			class="btn btn-lg btn-info btn-block"
+			ng-click="toggleEdit(true)">
+			<i class="fa fa-pencil pull-left"></i>
+			Edit
+			</button>
+		</div>
+	</div>
+	<div class="col-xs-6">
+		<div class="m-l-xxs">
+			<button
+			class="btn btn-lg btn-success btn-block"
+			ui-sref="app.tracking_update">
+			<i class="fa fa-plus pull-right"></i>
+			Add
+			</button>
+		</div>
+	</div>
+</div>
+<div class="row no-gutter" ng-show="onEdit">
+	<div class="col-xs-6">
+		<div class="m-r-xxs">
+			<button
+			class="btn btn-lg btn-primary btn-block"
+			ng-click="toggleEdit(false)">
+			<i class="fa fa-check pull-left"></i>
+			Done
+			</button>
+		</div>
+	</div>
+	<div class="col-xs-6">
+		<div class="m-l-xxs">
+			<button
+			class="btn btn-lg btn-danger btn-block"
+			ng-click="deleteAll()">
+			<i class="fa fa-times pull-right"></i>
+			Delete All
+			</button>
+		</div>
+	</div>
+</div>

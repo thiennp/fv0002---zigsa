@@ -1,0 +1,97 @@
+<form name="form" class="form-validation" ng-submit="editUser()">
+	<div class="bg-light lter b-b wrapper-xs ng-scope" style="text-align:center">
+		<div class="pull-left">
+			<button class="btn btn-lg btn-icon btn-info" ng-click="back()"><i class="fa fa-chevron-left"></i></button>
+		</div>
+		<div class="h4 page-title">App Configuration</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="panel-body">
+		<div class="form-group">
+			<div class="clearfix"></div>
+			<label class="control-label m-t-xs">Carrier Tracking</label>
+			<div class="pull-right">
+				<label class="i-switch i-switch-lg bg-info">
+					<input type="checkbox" ng-model="item.carrier_tracking" ng-change="updateData()">
+					<i></i>
+				</label>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="clearfix"></div>
+			<label class="control-label m-t-xs">Note</label>
+			<div class="pull-right">
+				<label class="i-switch i-switch-lg bg-info">
+					<input type="checkbox" ng-model="item.note" ng-change="updateData()">
+					<i></i>
+				</label>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="clearfix"></div>
+			<label class="control-label m-t-xs">Location</label>
+			<div class="pull-right">
+				<label class="i-switch i-switch-lg bg-info">
+					<input type="checkbox" ng-model="item.location" ng-change="updateData()">
+					<i></i>
+				</label>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="form-group">
+			<div class="clearfix"></div>
+			<label class="control-label m-t-xs">Over Write</label>
+			<div class="pull-right">
+				<label class="i-switch i-switch-lg bg-info">
+					<input type="checkbox" ng-model="item.over_write" ng-change="updateData()">
+					<i></i>
+				</label>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="form-group">
+			<div class="clearfix"></div>
+			<label class="control-label m-t-xs">Upload Pic</label>
+			<div class="pull-right">
+				<label class="i-switch i-switch-lg bg-info">
+					<input type="checkbox" ng-model="item.upload_pic" ng-change="updateData()">
+					<i></i>
+				</label>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="form-group">
+			<div class="clearfix"></div>
+			<label class="control-label m-t-xs">Package Dimensions</label>
+			<div class="pull-right">
+				<label class="i-switch i-switch-lg bg-info">
+					<input type="checkbox" ng-model="item.package_dimensions" ng-change="updateData()">
+					<i></i>
+				</label>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="form-group">
+			<div class="clearfix"></div>
+			<label class="control-label m-t-xs">Signature</label>
+			<div class="pull-right">
+				<label class="i-switch i-switch-lg bg-info">
+					<input type="checkbox" ng-model="item.signature" ng-change="updateData()">
+					<i></i>
+				</label>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="form-group">
+			<div class="clearfix"></div>
+			<label class="control-label m-t-xs">Print Label</label>
+			<div class="pull-right">
+				<label class="i-switch i-switch-lg bg-info">
+					<input type="checkbox" ng-model="item.print_label" ng-change="updateData()">
+					<i></i>
+				</label>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</form>

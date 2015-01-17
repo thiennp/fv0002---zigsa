@@ -1,0 +1,38 @@
+<form class="bs-example form-validation col-xs-12" ng-submit="update()">
+	<div class="form-group">
+		<textarea type="text" class="form-control input-lg" ng-model="over_write.comment" placeholder="Comment"></textarea>
+	</div>
+	<div class="alert alert-info form-group wrapper-xs">
+		<select ng-change="updateComment()" ng-model="comment_predefined_text" class="form-control btn-primary input-lg">
+			<option value="">Predefined text</option>
+			<option
+				ng-repeat="text in predefineText"
+				ng-value="text.pre_define_text">
+				{{ text.pre_define_text }}
+			</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<div class="input-group col-xs-12">
+			<input type="text" class="form-control input-lg" ng-model="over_write.address" placeholder="Address">
+			<span class="input-group-btn">
+			<button class="btn btn-info col-xs-12 btn-lg" type="button">Locate Me</button>
+			</span>
+		</div>
+	</div>
+	<div class="alert alert-info form-group wrapper-xs">
+		<div class="row">
+			<div class="col-xs-12">
+				<select ng-change="updateAddress()" ng-model="address_location" class="form-control btn-primary input-lg">
+					<option value="">Predefined Address</option>
+					<option
+						ng-repeat="address in addresses"
+						ng-value="address.name">
+						{{ address.name }}
+					</option>
+				</select>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</form>

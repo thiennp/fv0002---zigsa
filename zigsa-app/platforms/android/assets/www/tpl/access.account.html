@@ -1,0 +1,72 @@
+<form name="form" class="form-validation" ng-submit="editUser()">
+	<div class="bg-light lter b-b wrapper-xs ng-scope" style="text-align:center">
+		<div class="pull-left">
+			<button class="btn btn-lg btn-icon btn-info" ng-click="back()"><i class="fa fa-chevron-left"></i></button>
+		</div>
+		<div class="h4 page-title">Account</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="panel-body">
+		<div class="input-group m-b">
+			<span class="input-group-addon btn-primary">URL</span>
+			<input type="text" class="form-control input-lg" ng-model="item.url" required ng-blur="updateData()">
+		</div>
+		<div class="input-group m-b">
+			<span class="input-group-addon btn-primary">User</span>
+			<input type="text" class="form-control input-lg" ng-model="item.user" required ng-blur="updateData()" >
+		</div>
+		<div class="input-group m-b">
+			<span class="input-group-addon btn-primary">Password</span>
+			<input type="password" class="form-control input-lg" ng-model="item.password" name="password" ng-model="password" ng-required="passwordRequired" ng-blur="updateData()" >
+		</div>
+		<hr>
+		<div class="form-group">
+			<div class="clearfix"></div>
+			<label class="control-label m-t-xs">Save password</label>
+			<div class="pull-right">
+				<label class="i-switch i-switch-lg bg-info">
+					<input type="checkbox" ng-model="item.save_password" ng-change="updateData()">
+					<i></i>
+				</label>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="form-group">
+			<div class="clearfix"></div>
+			<label class="control-label m-t-sm">Language</label>
+			<div class="pull-right">
+				<button class="btn btn-rounded btn-lg btn-icon btn-info pull-right" ui-sref="access.language"><i class="fa fa-chevron-right"></i></button>
+			</div>
+			<div class="pull-right m-t-sm">
+				{{ item.language }}
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="form-group">
+			<div class="clearfix"></div>
+			<label class="control-label m-t-sm">App Configuration</label>
+			<div class="pull-right">
+				<button class="btn btn-rounded btn-lg btn-icon btn-info pull-right" ui-sref="access.config"><i class="fa fa-chevron-right"></i></button>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<hr>
+		<div class="form-group">
+			<div class="clearfix"></div>
+			<label class="control-label">Version</label>
+			<div class="pull-right">
+				{{ version }}
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="form-group">
+			<div class="clearfix"></div>
+			<label class="control-label m-t-sm">About</label>
+			<div class="pull-right">
+				<button class="btn btn-rounded btn-lg btn-icon btn-info pull-right" ui-sref="access.about"><i class="fa fa-chevron-right"></i></button>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</form>

@@ -1,0 +1,34 @@
+<div class="app-header-fixed bg-light">
+  <div class="lter b-b wrapper-xs ng-scope app-header" style="text-align:center">
+    <button class="btn btn-lg btn-icon btn-info pull-left" ng-click="back()"><i class="fa fa-chevron-left"></i></button>
+    <button class="btn btn-lg btn-icon btn-info pull-right" ng-click="toggleMenu()" ng-show="page!='home'"><i class="fa fa-bars"></i></button>
+    <div class="h4 page-title">{{ pageTitle }}</div>
+  </div>
+  <div class="row row-offcanvas">
+    <!-- menu -->
+    <div class="col-xs-6 sidebar-offcanvas alert-success" id="sidebar" role="navigation">
+      <div data-ng-include=" 'tpl/blocks/nav.html' ">
+      </div>
+    </div>
+    <!-- / menu -->
+
+    <div class="col-xs-12">
+      <!-- content -->
+      <div class="app-content">
+        <div ui-butterbar></div>
+        <div class="app-content-body bg-light">
+          <div class="hbox hbox-auto-xs hbox-auto-sm">
+            <!-- main -->
+            <div class="wrapper-xs m-t-xs fade-in-right-big smooth" ui-view="body"></div>
+            <!-- /main -->
+          </div>
+        </div>
+      </div>
+      <!-- /content -->
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="app-footer wrapper-xs b-t bg-light dker fade-in-up" ui-view="footer">    
+  </div>
+</div>

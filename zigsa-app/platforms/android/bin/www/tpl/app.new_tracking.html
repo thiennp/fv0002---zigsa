@@ -1,0 +1,71 @@
+<form class="bs-example form-horizontal form-validation" ng-submit="update()">
+	<div class="panel-body">
+		<div class="form-group m-b-xs">
+			<div class="input-group col-xs-12">
+				<span class="input-group-addon btn-info" ng-click="randomReceipt()">
+				<i class="fa fa-pencil"></i>
+				</span>
+				<input type="text" class="form-control input-lg" ng-model="item.new_tracking.receipt" placeholder="Receipt">
+				<span class="input-group-btn" ng-show="!item.new_tracking.receipt && !numberUpdated">
+				<button class="btn btn-info btn-lg" type="button">Scan</button>
+				</span>
+			</div>
+		</div>
+		<div class="form-group m-b-xs" ng-show="setting.carrier_tracking">
+			<div class="input-group col-xs-12">
+				<input type="text" class="form-control input-lg" ng-model="item.new_tracking.carrier_tracking" placeholder="Carrier Tracking">
+				<span class="input-group-btn" ng-show="!item.new_tracking.carrier_tracking && !numberUpdated">
+				<button class="btn btn-info btn-lg" type="button">Scan</button>
+				</span>
+			</div>
+		</div>
+		<div class="form-group m-b-xs" ng-show="setting.note">
+			<textarea type="text" class="form-control input-lg" ng-model="item.new_tracking.note" placeholder="Note"></textarea>
+		</div>
+		<div class="form-group m-b-xs" ng-show="setting.package_dimensions">
+			<button class="btn btn-info btn-block btn-lg" type="button" ng-click="packageDetail()">Add Package Dimensions</button>
+		</div>
+		<div class="form-group m-b-xs" ng-show="setting.location">
+			<div class="input-group col-xs-12">
+				<select ng-model="item.new_tracking.location" class="form-control input-lg">
+					<option value="">Location</option>
+					<option
+						ng-selected="item.new_tracking.location==location.id"
+						ng-repeat="location in locations"
+						ng-value="location.id">
+						{{ location.name }}
+					</option>
+				</select>
+				<span class="input-group-btn" ng-show="!item.new_tracking.location">
+				<button class="btn btn-info btn-lg" type="button">Scan</button>
+				</span>
+			</div>
+		</div>
+		<div class="form-group m-b-xs" ng-show="setting.over_write">
+			<button class="btn btn-info btn-block btn-lg" type="button" ui-sref="app.over_write_defaults">Over Write Defaults</button>
+		</div>
+		<div class="form-group m-b-xs">
+			<div style="display: inline-block">
+				<button class="btn btn-lg btn-icon btn-info pull-left" ng-show="setting.print_label">
+				<i class="fa fa-camera"></i>
+				</button>
+			</div>
+			<div style="display: inline-block">
+				<button class="btn btn-lg btn-icon btn-info pull-left" ng-show="setting.upload_pic">
+				<i class="fa fa-folder"></i>
+				</button>
+			</div>
+			<div style="display: inline-block" ng-show="setting.signature" class="pull-right">
+				<button class="btn btn-info col-xs-12 btn-lg" type="button" ng-hide="item.new_tracking.signature" ng-click="signatureDetail()">
+					Add Signature
+				</button>
+				<button class="btn btn-danger col-xs-12 btn-lg" type="button" ng-show="item.new_tracking.signature" ng-click="removeSignature()">
+					Remove Signature
+				</button>
+			</div>
+		</div>
+		<div class="form-group m-b-xs pull-right" ng-show="item.new_tracking.signature">
+			<img ng-src="{{ item.new_tracking.signature }}" class="form-signature" />
+		</div>
+	</div>
+</form>

@@ -1,0 +1,28 @@
+<!-- first -->
+<div class="nav wrapper-md">
+	<button class="btn m-b-xs btn-lg btn-success btn-block" ui-sref="app.home">
+		<i class="fa fa-home pull-left"></i>
+		<span translate="">Home</span>
+	</button>
+	<button class="btn m-b-xs btn-lg btn-success btn-block" ui-sref="app.search_user" ng-show="config.new_tracking">
+		<i class="fa fa-plus pull-left"></i>
+		<span translate="">New Tracking</span>
+	</button>
+	<button class="btn m-b-xs btn-lg btn-success btn-block" ui-sref="app.tracking_list" ng-show="config.new_tracking">
+		<i class="fa fa-list pull-left"></i>
+		<span translate="">Tracking List</span>
+	</button>
+	<button class="btn m-b-xs btn-lg btn-success btn-block" ui-sref="app.tracking_update" ng-show="config.tracking_update">
+		<i class="fa fa-pencil pull-left"></i>
+		<span translate="">Tracking Update</span>
+	</button>
+	<button class="btn m-b-xs btn-lg btn-success btn-block" ui-sref="app.tracking_update_list" ng-show="config.tracking_update">
+		<i class="fa fa-list pull-left"></i>
+		<span translate="">Tracking Update List</span>
+	</button>
+	<button class="btn m-b-xs btn-lg btn-danger btn-block" ui-sref="access.splash">
+		<i class="fa fa-sign-out pull-left"></i>
+		<span translate="">Logout</span>
+	</button>
+</ul>
+<!-- / third -->
